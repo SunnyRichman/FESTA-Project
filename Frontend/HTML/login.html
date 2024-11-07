@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito">
+        <link rel="stylesheet" href="../css/login.css">
+        <script src="../../Backend/login.js"></script>
+        <title>Login</title>
+    </head>
+    
+    <body>
+        <header><h1>Login</h1></header>
+        <nav>
+            <div class="left">
+                <a href="/"><p>Home</p></a>
+                <a href="/search"><p>Search</p></a>
+                <a href="/team"><p>Team</p></a>
+            </div>
+            <div class="right">
+                <a href="/login"><p>Login(Admin only)</p></a>
+            </div>
+        </nav>
+        <article>
+            <form method="GET" onsubmit="verify()">
+                <fieldset style="border: none;">
+                    <div class = "username">
+                        <label for="username">Username&nbsp;&nbsp;&nbsp;</label><br>
+                        <input type="text" id="usernameInput" name="username" required title="Please insert your username."><br>    
+                    </div>
+                    <div class = "password">
+                        <label for="password">Password&nbsp;&nbsp;&nbsp;</label><br>
+                        <input type="password" id="passwordInput" name="password" required title="Please insert your password."><br><br>
+                    </div>
+                    <button type="submit"><h3>login</h3></button>
+                </fieldset>
+            </form>
+        </article>
+        <footer><p>© 2024 FESTA Vinyl Disc and Cassette Co., Ltd.</p></footer>
+    </body>
+    
+</html>

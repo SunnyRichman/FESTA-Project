@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito">
+    <link rel="stylesheet" href="../css/albumManagement.css">
+    <script src = "../../Backend/albumManagement.js"></script>
+    <title>Album Management</title>
+</head>
+<body>
+<header>
+    <h1>Album Management</h1>
+</header>
+<nav>
+    <div class="left">
+        <a href="/admin/home"><p>Home</p></a>
+        <a href="/admin/search"><p>Search</p></a>
+        <a href="/admin/team"><p>Team</p></a>
+        <a href="/adminPortal"><p>Admin Portal</p></a>
+    </div>
+    <div class="right">
+        <a href="/login"><p>Log out</p></a>
+    </div>
+</nav>
+<article>
+    <div class="header-box">
+        <div class="add-new-album">
+            
+            <form style="margin-top: 1%;" onsubmit="addAlbum()">
+                <h2>Add New Album</h2>
+                <fieldset id="inner">
+                <label>Album Title:</label><input type="text" id="addAlbum_title" required placeholder="Enter album title">
+                <label>Artist:</label><input type="text" id="addAlbum_artist" required placeholder="Enter artist name">
+                <label>Label:</label><input type="text" id="addAlbum_label" required placeholder="Enter label name"> 
+                <label>Cover:</label><input type="text" id="addAlbum_cover" required placeholder="Enter cover art info">
+                <label>EP/LP:</label>
+                <select required id="addAlbum_type">
+                    <option value="EP">EP</option>
+                    <option value="LP">LP</option>
+                </select>
+                <label>Release Year:</label><input type="text" id="addAlbum_year" required placeholder="Enter release year"><br><br>                
+                <div class="album-info">
+                    <label>Price:</label><input type="text" id="addAlbum_price" required placeholder="Enter album price">
+                    <div class="vc"></div>
+                    <label>Vinyl disc:</label><input type="text" required id="addAlbum_disc">
+                    <label>Cassette Tape:</label><input type="text" required id="addAlbum_tape">
+                </div>
+            
+                <br></br>
+                <div class="button">
+                    <button type="submit"><h3>SUBMIT</h3></button>
+                    <button type="reset"><h3>CLEAR</h3></button>
+                </div>
+            </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <div class="header-box">
+        <div class="song-adding">        
+            <form onsubmit="songAdding()">
+                <h2>Song adding</h2>
+                <fieldset id="inner">
+                <label>Song Title:</label>
+                <input type="text" id="addSongTitle" placeholder="Enter song title">
+                <label>duration:</label>
+                <input type="text" id="addSonglength" placeholder="Enter song duration">
+                <label>Key:</label>
+                <select id="addSongKey">
+                    <option selected></option>
+                    <option value="C">C</option><option value="C#">C#</option><option value="D">D</option><option value="D#">Eb</option><option value="E">E</option>
+                    <option value="F">F</option><option value="F#">F#</option><option value="G">G</option><option value="G#">G#</option><option value="A">A</option>
+                    <option value="A#">A#</option><option value="B">B</option>
+                </select>
+                <label>Add to album:</label>
+                <select id="addToAlbum">
+                    <option selected></option>
+                </select> <br><br>
+                
+                <div class="button">
+                    <button type="submit"><h3>Add to album</h3></button>
+                    <button type="reset"><h3>CLEAR</h3></button>
+                </div>
+            </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <form onsubmit="updateAlbum()">
+        <h3>Edit existing album</h3>
+        <fieldset id="inner">
+            <label>Album name:</label>&nbsp;
+            <select id="editAlbum">
+                <option selected></option>
+            </select>
+            &nbsp;<label>Edit:</label>&nbsp;
+            <select id = "album_property">
+                <option selected></option>
+                <option value="contributeArtist">Artist</option>
+                <option value="label">Label</option>
+                <option value="cover">Cover</option>
+                <option value="albumType">EP/LP</option>
+                <option value="releaseYear">Release Year</option>
+                <option value="Price">Price</option>
+                <option value="vinylDisc">Vinyl disc</option>
+                <option value="cassetteTape">Cassette Tape</option>
+            </select>
+            <label>Value:</label>&nbsp;<input style="width:10%" type="text" required title= "Please fill new value here" id = "album_value"></input><br><br>
+            <fieldset class="button">
+                <button type="submit"><h3>Edit:</h3></button>&nbsp;<button type="reset"><h3>clear</h3></button>
+            </fieldset>
+        </fieldset>
+    </form>
+
+    <form onsubmit="songUpdate()">
+        <h3>Edit existing song</h3>
+        <fieldset id="inner">
+            <label>Album name:</label>&nbsp;
+            <select id="editSong">
+                <option selected></option>
+            </select>
+            <label>Song name:</label>&nbsp;<input style="width:10%"type="text" required title= "Please fill your Song title here" id = "put_title"></input>
+            &nbsp;<label>Edit:</label>&nbsp;
+            <select id = "put_property">
+                <option selected></option>
+                <option value="songName">Song Title</option>
+                <option value="Duration">duration</option>
+                <option value="_Key">Key</option>    
+            </select>
+            <label>Value:</label>&nbsp;<input style="width:10%" type="text" required title= "Please fill new value here" id = "new_value"></input><br><br>
+            <fieldset class="button">
+                <button type="submit"><h3>Edit</h3></button>&nbsp;<button type="reset"><h3>clear</h3></button>
+            </fieldset>
+        </fieldset>
+    </form>
+    
+    <form style="margin-bottom: 1%;">
+        <h3>Existing Album</h3>
+        <fieldset id="table">
+            <table id="albumTable">
+                <th>Album Title</th><th>Artist</th><th>Label</th><th>Cover</th><th>EP/LP</th><th>Release Year</th><th>Price</th><th>Vinyl disc</th><th>Cassette Tape</th>
+            </table>
+            <fieldset class="button2">
+                <button onclick="_delete()"><h3>delete</h3></button>
+            </fieldset>
+        </fieldset>
+    </form>
+</article>
+<footer>
+    <p>&copy; 2024 FESTA Vinyl Disc and Cassette Co., Ltd.</p>
+</footer>
+</body>
+</html>

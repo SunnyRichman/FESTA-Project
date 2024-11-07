@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Admin Account Management</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito">
+        <link rel="stylesheet" href="../css/accManagement.css">
+        <script src = "../../Backend/accManagement.js"></script>
+    </head>
+    <body onload="loadadmin()">
+        <header><h1>Admin Account Management<h1></header>
+        <nav>
+            <div class="left">
+                <a href="/admin/home"><p>Home</p></a>
+                <a href="/admin/search"><p>Search</p></a>
+                <a href="/admin/team"><p>Team</p></a>
+                <a href="/adminPortal"><p>Admin Portal</p></a>
+            </div>
+            <div class="right">
+                <a href="/login"><p>Log out</p></a>
+        </nav>
+        <article>
+            <form style="margin-top: 1%;" onsubmit="_add()">
+                <h3>Add new user account</h3>
+                <fieldset id="inner">
+                    <label>First name</label>&nbsp;<input type="text" required title= "Please fill your first name here" id = "addFname"></input>
+                    &nbsp;<label>Last name</label>&nbsp;<input type="text" required title= "Please fill your last name here" id = "addLname"></input><br><br>
+                    <label>Username</label>&nbsp;<input type="text" required title= "Please fill your email here" id = "addEmail"></input>
+                    &nbsp;<label>Password</label>&nbsp;<input type="text" required title= "Please fill your password here" id = "addPassword"></input><br>
+                    <br>
+                    <fieldset class="button">
+                        <button type="submit"><h3>submit</h3></button>&nbsp;<button type="reset"><h3>clear</h3></button>
+                    </fieldset>
+                </fieldset>
+            </form>
+            <form onsubmit="_edit()">
+                <h3>Edit exist user account</h3>
+                <fieldset id="inner">
+                    <label>Username</label>&nbsp;<input style="width:30%"type="text" required title= "Please fill your username here" id = "put_username"></input>
+                    &nbsp;<label>Edit</label>&nbsp;
+                    <select id = "put_edit">
+                        <option selected></option>
+                        <option value="Fname">Fname</option>
+                        <option value="Lname">Lname</option>
+                        <option value="Username">Username</option>
+                        <option value="_Password">Password</option>
+                    </select>
+                    <label>Value</label>&nbsp;<input style="width:30%" type="text" required title= "Please fill new value here" id = "put_value"></input><br><br>
+                    <fieldset class="button">
+                        <button type="submit"><h3>Edit</h3></button>&nbsp;<button type="reset"><h3>clear</h3></button>
+                    </fieldset>
+                </fieldset>
+            </form>
+            <form style="margin-bottom: 1%;">
+                <h3>Existing account</h3>
+                <fieldset id="table">
+                    <table id="adminTable">
+                        <th>First Name</th><th>Last Name</th><th>Email</th><th>Password</th>
+                    </table>
+                    <fieldset class="button2">
+                        <button onclick="_delete()"><h3>delete</h3></button>
+                    </fieldset>
+                </fieldset>
+            </form>
+        </article>
+        <footer><p>© 2024 FESTA Vinyl Disc and Cassette Co., Ltd.</p></footer>
+    </body>
+</html>

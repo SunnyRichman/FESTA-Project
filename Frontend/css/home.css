@@ -1,0 +1,96 @@
+*{
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    margin: 0px;
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+    background-color: #006C6C;
+    color: #FFFFC9;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #006c6cc9;
+    padding: 5px;
+}
+
+div.left{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.right{
+    display: flex;
+}
+
+nav a{
+    color: #FFFFC9;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #9AE5E5;
+}
+
+body{
+    display: flex;
+    background-color: #FFFFC9;
+    height: 100vh;
+    flex-direction: column;
+}
+
+article{
+    margin-top: 1%;
+    text-align: center;
+    color: #006C6C;
+}
+
+#product-display{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10%;
+    color: #006C6C;
+}
+
+#product{
+    padding: 10px;
+    width: 150px;
+    
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+footer{
+    padding: 5px;
+    margin-top: auto;
+    text-align: center;
+    color: #FFFFC9;
+    background-color: #006C6C;
+}
+
+article div a{
+    display: block;
+    text-decoration: none;
+    color: #006C6C;
+}
+
+article div a:hover{
+    display: block;
+    background-color: #006c6c98;
+    color: #FFFFC9;
+    transform: scale(1.025);
+    border-radius: 30px;
+}

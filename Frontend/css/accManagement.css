@@ -1,0 +1,108 @@
+*{
+    font-family: "Nunito", sans-serif;
+    font-style: normal;    
+    margin: 0px;
+}
+
+header{
+  text-align: center;
+  background-color: #006C6C;
+  color: #FFFFC9;
+  padding: 20px
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #006c6cc9;
+    padding: 5px;
+}
+
+div.left{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.right{
+    display: flex;
+}
+nav a{
+    color: #FFFFC9;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #9AE5E5;
+}
+body{
+    display: flex;
+    background-color: #FFFFC9;
+    height: 100vh;
+    flex-direction: column;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    align-items: center;
+    gap: 10px
+}
+
+button{
+    background-color: #9AE5E5;
+    color: #F39595;
+    border: none;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+button:hover{ 
+    background-color: #f2bfbf;
+    color: #9AE5E5;
+}
+
+form{
+    border: none;
+    border-radius: 5px;
+    background-color: #DEEC87;
+    width: 75vw;
+    padding: 10px
+}
+
+fieldset{
+    border: none;
+}
+
+#inner{
+    background-color: #F39595;
+    padding: 20px;
+}
+
+input{
+    width: 40%
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+#adminTable{
+    border: 1px solid black;
+    width: 100%;
+}
+th,tr,td{
+    border: 1px solid black;
+    width: 25%;
+    text-align: center;
+}
+
+footer{
+    padding: 5px;
+    margin-top: auto;
+    text-align: center;
+    color: #FFFFC9;
+    background-color: #006C6C;
+}
