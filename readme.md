@@ -21,7 +21,7 @@ Use this command to clone repository
 	After you fill in these fields, please press enter.
 6. After command 'npm init' has been run, please visit the file name "package.json". You will see field "scripts" and inner field "test" inside. Please change from "test" to "start".
 7. After No.5 has been done. Use Node.js command prompt and run these command (Priority isn't needed).
-```npm install express```
+```npm install express```<br />
 ```npm install nodemon```
 
 === In the part of back-end ===
