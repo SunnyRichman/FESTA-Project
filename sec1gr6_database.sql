@@ -15,15 +15,15 @@ CREATE TABLE Album (
 );
 
 INSERT INTO Album
-VALUE ("ETC Studio Live Session",3000,"https://github.com/SunnyRichman/FESTA-Project/blob/61a602a2f124dcb7f43e45878be4f55b955b67e1/Album/ETC.png?raw=true",10,43,"Muzik Move Records","ETC","LP",2022),
-("ICE Saranyu",450,"https://github.com/SunnyRichman/FESTA-Project/blob/61a602a2f124dcb7f43e45878be4f55b955b67e1/Album/ICE.png?raw=true",11,0,"GMM Grammy","Ice Saranyu","LP",2006),
-("BLISS",1500,"https://github.com/SunnyRichman/FESTA-Project/blob/61a602a2f124dcb7f43e45878be4f55b955b67e1/Album/INK.png?raw=true",13,50,"Muzik Move Records","Ink Waruntorn","EP",2017),
+VALUE ("ETC Studio Live Session",3000,"https://github.com/SunnyRichman/FESTA-Project/blob/61a602a2f124dcb7f43e45878be4f55b955b67e1/Album/ETC.jpg?raw=true",10,43,"Muzik Move Records","ETC","LP",2022),
+("ICE Saranyu",450,"https://github.com/SunnyRichman/FESTA-Project/blob/61a602a2f124dcb7f43e45878be4f55b955b67e1/Album/ICE.jpg?raw=true",11,0,"GMM Grammy","Ice Saranyu","LP",2006),
+("BLISS",1500,"https://github.com/SunnyRichman/FESTA-Project/blob/61a602a2f124dcb7f43e45878be4f55b955b67e1/Album/INK.jpg?raw=true",13,50,"Muzik Move Records","Ink Waruntorn","EP",2017),
 ("Are You Serious",2400,"https://github.com/SunnyRichman/FESTA-Project/blob/61a602a2f124dcb7f43e45878be4f55b955b67e1/Album/Serious%20Bacon.jpg?raw=true",12,20,"Muzik Move Records","Serious Bacon","LP",2022),
 ("Volume 8: Chong-Proh",4900,"https://github.com/SunnyRichman/FESTA-Project/blob/61a602a2f124dcb7f43e45878be4f55b955b67e1/Album/Tattoo%20colour.jpg?raw=true",0,0,"Smallroom","Tattoo Colour","LP",2008),
-("B",2200,"https://github.com/SunnyRichman/FESTA-Project/blob/61a602a2f124dcb7f43e45878be4f55b955b67e1/Album/B.jpg?raw=true",0,48,"Smallroom","Slur","LP",2015),
-("D Gerrard",3900,"https://github.com/SunnyRichman/FESTA-Project/blob/61a602a2f124dcb7f43e45878be4f55b955b67e1/Album/D.jpg?raw=true",1,3,"Warner Music Thailand","D Gerrard","LP",2019),
+("B",2200,"https://github.com/SunnyRichman/FESTA-Project/blob/61a602a2f124dcb7f43e45878be4f55b955b67e1/Album/B.png?raw=true",0,48,"Smallroom","Slur","LP",2015),
+("D Gerrard",3900,"https://github.com/SunnyRichman/FESTA-Project/blob/61a602a2f124dcb7f43e45878be4f55b955b67e1/Album/D.png?raw=true",1,3,"Warner Music Thailand","D Gerrard","LP",2019),
 ("Making Steak",4290,"https://github.com/SunnyRichman/FESTA-Project/blob/61a602a2f124dcb7f43e45878be4f55b955b67e1/Album/hybes.jpg?raw=true",0,1,"JUICEY","HYBS","LP",2022),
-("Reun Pae Volume 6",1200,"https://github.com/SunnyRichman/FESTA-Project/blob/61a602a2f124dcb7f43e45878be4f55b955b67e1/Album/ruen.jpg?raw=true",0,5,"Smallroom","Tattoo Colour","LP",2022),
+("Reun Pae Volume 6",1200,"https://github.com/SunnyRichman/FESTA-Project/blob/61a602a2f124dcb7f43e45878be4f55b955b67e1/Album/reun.png?raw=true",0,5,"Smallroom","Tattoo Colour","LP",2022),
 ("80 Kisses",6990,"https://github.com/SunnyRichman/FESTA-Project/blob/61a602a2f124dcb7f43e45878be4f55b955b67e1/Album/polycat.jpg?raw=true",1,0,"Smallroom","Polycat","LP",2016);
 
 CREATE TABLE _Admin (
