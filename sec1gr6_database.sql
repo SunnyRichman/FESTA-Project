@@ -15,16 +15,16 @@ CREATE TABLE Album (
 );
 
 INSERT INTO Album
-VALUE ("ETC Studio Live Session",3000,"https://raw.githubusercontent.com/SunnyRichman/ICTLife/main/Album/ETC.jpg",10,43,"Muzik Move Records","ETC","LP",2022),
-("ICE Saranyu",450,"https://raw.githubusercontent.com/SunnyRichman/ICTLife/main/Album/ICE.jpg",11,0,"GMM Grammy","Ice Saranyu","LP",2006),
-("BLISS",1500,"https://raw.githubusercontent.com/SunnyRichman/ICTLife/FESTAProject/Album/INK.jpg",13,50,"Muzik Move Records","Ink Waruntorn","EP",2017),
-("Are You Serious",2400,"https://raw.githubusercontent.com/SunnyRichman/ICTLife/FESTAProject/Album/Serious%20Bacon.jpg",12,20,"Muzik Move Records","Serious Bacon","LP",2022),
-("Volume 8: Chong-Proh",4900,"https://raw.githubusercontent.com/SunnyRichman/ICTLife/cac91c9743c2acaef131e0ace7d308acbc32a916/Album/Tattoo%20colour.jpg",0,0,"Smallroom","Tattoo Colour","LP",2008),
-("B",2200,"https://raw.githubusercontent.com/SunnyRichman/ICTLife/FESTAProject/Album/B.png",0,48,"Smallroom","Slur","LP",2015),
-("D Gerrard",3900,"https://raw.githubusercontent.com/SunnyRichman/ICTLife/FESTAProject/Album/D.png",1,3,"Warner Music Thailand","D Gerrard","LP",2019),
-("Making Steak",4290,"https://raw.githubusercontent.com/SunnyRichman/ICTLife/FESTAProject/Album/hybes.jpg",0,1,"JUICEY","HYBS","LP",2022),
-("Reun Pae Volume 6",1200,"https://raw.githubusercontent.com/SunnyRichman/ICTLife/FESTAProject/Album/reun.png",0,5,"Smallroom","Tattoo Colour","LP",2022),
-("80 Kisses",6990,"https://raw.githubusercontent.com/SunnyRichman/ICTLife/FESTAProject/Album/polycat.jpg",1,0,"Smallroom","Polycat","LP",2016);
+VALUE ("ETC Studio Live Session",3000,"https://drive.google.com/thumbnail?id=1hba5L1Otw9lP2sgSBuA4qxJhE0JBkOwy",10,43,"Muzik Move Records","ETC","LP",2022),
+("ICE Saranyu",450,"https://drive.google.com/thumbnail?id=1b7UKNaluWq_Wwj2zQa7e8VOPHhcZyPrK",11,0,"GMM Grammy","Ice Saranyu","LP",2006),
+("BLISS",1500,"https://drive.google.com/thumbnail?id=1yCGevL6qwjZIwRGMKGf5kEVB6LHmVELl",13,50,"Muzik Move Records","Ink Waruntorn","EP",2017),
+("Are You Serious",2400,"https://drive.google.com/thumbnail?id=109Mr7CGTGkeCbjj6oBfevaRP1ItuzKPj",12,20,"Muzik Move Records","Serious Bacon","LP",2022),
+("Volume 8: Chong-Proh",4900,"https://drive.google.com/thumbnail?id=https://drive.google.com/file/d/1FmdPiiPk-haJSknDGpYUg20CryC9zAj6/view?usp=sharing",0,0,"Smallroom","Tattoo Colour","LP",2008),
+("B",2200,"https://drive.google.com/thumbnail?id=1_tPC954AgHGAX22J3bYA9NM7M4LuZgp9",0,48,"Smallroom","Slur","LP",2015),
+("D Gerrard",3900,"https://drive.google.com/thumbnail?id=1w-1xKJXod7FtsL_s_Y9rzOflNWOIf1_0",1,3,"Warner Music Thailand","D Gerrard","LP",2019),
+("Making Steak",4290,"https://drive.google.com/thumbnail?id=1H8s78ETxhAT1vEpD03Wi6qP7tEqqB8Lo",0,1,"JUICEY","HYBS","LP",2022),
+("Reun Pae Volume 6",1200,"https://drive.google.com/thumbnail?id=1eGvolJqENIR8A5TyBqUYPXN-_U8vQaGR",0,5,"Smallroom","Tattoo Colour","LP",2022),
+("80 Kisses",6990,"https://drive.google.com/thumbnail?id=1-kTIbmfLRL5uc2jLQO6vQkrXF8xmaod5",1,0,"Smallroom","Polycat","LP",2016);
 
 CREATE TABLE _Admin (
     Fname VARCHAR(50) NOT NULL,
